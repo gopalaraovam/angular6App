@@ -1,0 +1,17 @@
+<p>demo-comp works don't do!</p>
+<div>
+    <input type="text" [(ngModel)]="firstName">
+    <br />
+    <br />
+    <input type="text" [ngModel]="firstName">
+    <br />
+    <br />
+    <span *ngIf="firstName=='sample'">{{firstName}}</span>
+</div>
+<table>
+    <tr *ngFor="let emp of empLIst">
+        <td [class.sampleBackground]="emp.fistName=='Sample'">{{emp.fistName}}</td>
+        <td *ngIf="emp.fistName=='Sample'">Fisrt namr</td>
+    </tr>
+</table>
+<span>{{globalService.isSampleWorks}}</span>
